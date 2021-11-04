@@ -3,6 +3,7 @@ package ggg.idea.tdd;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ChickenRabbitTddTest {
 
@@ -21,6 +22,11 @@ public class ChickenRabbitTddTest {
     @Test
     public void should_return_1_for_2_heads_and_6_feet() {
         assertEquals(1, chickenRabbitTdd.chicken(2, 6));
+    }
+
+    @Test
+    public void should_throw_exception_for_2_heads_and_2_feet() {
+        assertThrows(CanNotCalculateException.class, () -> chickenRabbitTdd.chicken(2, 2));
     }
 
 }
