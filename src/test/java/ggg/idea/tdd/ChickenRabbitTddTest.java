@@ -13,4 +13,11 @@ public class ChickenRabbitTddTest {
         assertEquals(1, chickenRabbitTdd.chicken(1, 2));
     }
 
+    @Test
+    public void should_return_2_for_2_heads_and_4_feet() {
+        ChickenRabbitTdd chickenRabbitTdd = new ChickenRabbitTdd();
+
+        assertEquals(2, chickenRabbitTdd.chicken(2, 4));
+    }
+
 }
