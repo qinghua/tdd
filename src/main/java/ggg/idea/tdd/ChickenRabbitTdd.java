@@ -7,6 +7,10 @@ public class ChickenRabbitTdd {
             throw new CanNotCalculateException();
         }
 
+        if (feet > heads * 4) {
+            throw new CanNotCalculateException();
+        }
+
         return (4 * heads - feet) / 2;
     }
 }

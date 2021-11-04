@@ -29,4 +29,9 @@ public class ChickenRabbitTddTest {
         assertThrows(CanNotCalculateException.class, () -> chickenRabbitTdd.chicken(2, 2));
     }
 
+    @Test
+    public void should_throw_exception_for_2_heads_and_10_feet() {
+        assertThrows(CanNotCalculateException.class, () -> chickenRabbitTdd.chicken(2, 10));
+    }
+
 }
